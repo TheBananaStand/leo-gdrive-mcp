@@ -1,5 +1,5 @@
 {
-  "name": "gdrive",
+  "name": "gdrive-mcp",
   "label": "Google Drive",
   "description": "Google Drive tools for the agent — create, read, update, and list Leo-created files. Docs export as Markdown, Sheets as CSV. Operates under the drive.file scope: Leo only sees files it created.",
   "icon": "folder",
