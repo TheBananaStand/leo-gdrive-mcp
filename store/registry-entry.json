@@ -12,7 +12,7 @@
     "command": "npx",
     "args": [
       "-y",
-      "https://github.com/TheBananaStand/leo-gdrive-mcp/archive/REPLACE_WITH_SHA.tar.gz"
+      "https://github.com/TheBananaStand/leo-gdrive-mcp/archive/0ae3cb19803178f99a32a8ad016ad6f670fc6e91.tar.gz"
     ]
   },
   "descriptor": {
