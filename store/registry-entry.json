@@ -1,0 +1,40 @@
+{
+  "name": "gdrive",
+  "label": "Google Drive",
+  "description": "Google Drive tools for the agent — create, read, update, and list Leo-created files. Docs export as Markdown, Sheets as CSV. Operates under the drive.file scope: Leo only sees files it created.",
+  "icon": "folder",
+  "version": "1.0.0",
+  "author": "TheBananaStand",
+  "homepage": "https://github.com/TheBananaStand/leo-gdrive-mcp",
+  "category": "package",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "https://github.com/TheBananaStand/leo-gdrive-mcp/archive/REPLACE_WITH_SHA.tar.gz"
+    ]
+  },
+  "descriptor": {
+    "oauth_provider": "google",
+    "entitlements": {
+      "network": [
+        "www.googleapis.com",
+        "oauth2.googleapis.com"
+      ],
+      "oauth_tokens": [
+        "google"
+      ],
+      "sends": [
+        {
+          "to": "www.googleapis.com",
+          "classes": [
+            "documents",
+            "credentials"
+          ],
+          "purpose": "Your Google account grant — exchanged once per tool call for a short-lived access token, then discarded. File names, content, and metadata you ask the agent to read or write travel to Google's Drive API and nowhere else. Nothing from Leo's other packages is attached, and the grant is single-use: it cannot be replayed."
+        }
+      ]
+    }
+  }
+}
