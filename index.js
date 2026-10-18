@@ -495,7 +495,7 @@ export function missingRequired(name, args) {
 // ---------------------------------------------------------------------------
 
 const server = new Server(
-  { name: "leo-gdrive-mcp", version: "1.0.0" },
+  { name: "leo-gdrive", version: "1.0.0" },
   { capabilities: { tools: {} } }
 );
 

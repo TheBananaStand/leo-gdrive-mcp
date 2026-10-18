@@ -1,4 +1,4 @@
-# leo-gdrive-mcp
+# leo-gdrive
 
 Google Drive as Leo tools, over MCP — create, read, update, and list
 Leo-created files, with Docs exported as Markdown and Sheets as CSV.

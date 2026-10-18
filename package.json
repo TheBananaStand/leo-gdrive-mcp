@@ -1,10 +1,10 @@
 {
-  "name": "leo-gdrive-mcp",
+  "name": "leo-gdrive",
   "version": "1.0.0",
   "description": "Google Drive as Leo tools, over MCP.",
   "type": "module",
   "bin": {
-    "leo-gdrive-mcp": "index.js"
+    "leo-gdrive": "index.js"
   },
   "main": "index.js",
   "files": [
